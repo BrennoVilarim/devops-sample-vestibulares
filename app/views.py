@@ -57,7 +57,7 @@ def cadastro_cursos(request):
         {
             'title':'Cadastro de cursos',
 #           'cursos': ['ADS' , 'SI', 'CC'],
-            'cursos': Curso.objects.all(),
+            'cursos': curso.objects.all(),
             'year':datetime.now().year,
         })
     )
